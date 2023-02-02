@@ -29,3 +29,7 @@ Underscores can be inserted in numeric literals to improve readability, e.g. `1_
 We need to tell the compiler the type of the literals we use. For now, we'll use the u32 suffix to indicate that the literal is an unsigned 32-bit integer, and the i32 suffix to indicate that it's a signed 32-bit integer.
 
 The operators available and their precedence in Rust are similar to other C-like languages.
+
+## Tuples
+
+A tuple is a collection of values of different types. Tuples are constructed using parentheses (), and each tuple itself is a value with type signature (T1, T2, ...), where T1, T2 are the types of its members. Functions can use tuples to return multiple values, as tuples can hold any number of values.
