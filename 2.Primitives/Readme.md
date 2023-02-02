@@ -33,3 +33,11 @@ The operators available and their precedence in Rust are similar to other C-like
 ## Tuples
 
 A tuple is a collection of values of different types. Tuples are constructed using parentheses (), and each tuple itself is a value with type signature (T1, T2, ...), where T1, T2 are the types of its members. Functions can use tuples to return multiple values, as tuples can hold any number of values.
+
+
+
+## Arrays and Slices
+
+An array is a collection of objects of the same type T, stored in contiguous memory. Arrays are created using brackets [], and their length, which is known at compile time, is part of their type signature [T; length].
+
+Slices are similar to arrays, but their length is not known at compile time. Instead, a slice is a two-word object, the first word is a pointer to the data, and the second word is the length of the slice. The word size is the same as usize, determined by the processor architecture e.g. 64 bits on an x86-64. Slices can be used to borrow a section of an array, and have the type signature &[T].
